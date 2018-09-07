@@ -1,0 +1,92 @@
+.main {
+    margin: 50px 0 50px 0;
+}
+.main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 90px;
+}
+.main-news {
+    max-width: 70%;
+    margin: 20px 0 0 130px;
+}
+.main-news-div {
+    padding: 15px 20px 15px 20px;
+    max-height: 130px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-news-div:hover {
+    background-color: #f2f2f2;
+}
+.main-news-div img {
+    max-width: 100px;
+}
+.new-div-description {
+    padding-left: 30px;
+}
+.new-div-description h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+.new-div-description p {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.new-div-description span {
+    font-size: 12px;
+    position: relative;
+    top: 60px;
+}
+
+@media all and (max-width: 1007px) {
+    .new-div-description span {
+        top: 50px;
+    }
+}
+@media all and (max-width: 817px) {
+    .new-div-description span {
+        top: 30px;
+    }
+}
+@media all and (max-width: 700px) {
+    .main-news {
+        max-width: 80%;
+        margin: 20px 0 0 20px;
+    }
+}
+@media all and (max-width: 595px) {
+    .new-div-description span {
+        top: 20px;
+    }
+}
+@media all and (max-width: 505px) {
+    .main-news {
+        max-width: 100%;
+    }
+    .new-div-description span {
+        top: 30px;
+    }
+}
+@media all and (max-width: 495px) {
+    .new-div-description span {
+        top: 20px;
+    }
+}
+@media all and (max-width: 420px) {
+    .new-div-description span {
+        top: 10px;
+    }
+    .main-news {
+        margin: 20px 0 0 5px;
+    }
+}
+@media all and (max-width: 385px) {
+    .main-news-div {
+        padding: 15px 5px 15px 5px;
+        margin: 50px 0 50px 0;
+    }
+}

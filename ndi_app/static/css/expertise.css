@@ -1,0 +1,246 @@
+aside {
+  display: block !important;
+}
+
+.advantages-div {
+  background-color: #fff07b;
+}
+.main {
+  font-family: 'Montserrat', sans-serif;
+}
+.main h2 {
+  padding-top: 25px;
+}
+.div-top {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.div-top-img {
+  padding-left: 50px;
+  max-width: 700px; 
+}
+.div-top-img img{
+  max-width: 700px;
+}
+.div-top-img p {
+  padding-top: 10px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.div-top-doc {
+  margin-left: 150px;
+}
+.div-top-doc h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.div-top-doc svg {
+  position: relative;
+  width: 25px;
+  left: 80px;
+  top: -25px;
+}
+.div-top-doc polyline {
+  stroke: #ffffff;
+}
+
+.div-top-doc p {
+  font-weight: 500;
+  font-size: 14px;
+  width: 100px;
+  cursor: pointer;
+  padding: 10px 5px 10px 10px;
+}
+.div-top-doc p:hover {
+  background-color: #cfdce1;
+  font-weight: 600;
+}
+.div-top-doc-questionnaire {
+  margin-top: 25px;
+}
+.div-top-doc-offer {
+  margin-top: 10px;
+}
+.advantages {
+  padding-top: 50px;
+}
+.advantages h3{
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.advantages-div {
+  padding-left: 210px;
+}
+.advantages-div-div {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  padding-top: 50px;
+}
+.advantages-div-1 img {
+  width: 100px;
+}
+.advantages-div-2 img {
+  width: 180px;
+}
+.advantages-div-3 img {
+  width: 100px;
+}
+.advantages-div-4 img {
+  width: 100px;
+}
+.advantages-div-5 img {
+  width: 100px;
+}
+.advantages-div-6 img {
+  width: 100px;
+}
+.advantages-div-2 {
+  padding-left: 330px;
+}
+.advantages-div-3 {
+  padding-left: 330px;
+  padding-right: 20px;
+}
+.advantages-div-4 {
+  padding-right: 150px;
+}
+.advantages-div-5 {
+  padding-left: 170px;
+  padding-right: 370px;
+}
+.advantages-div-1 p {
+  position: relative;
+  left: 50px;
+  top: -70px;
+}
+.advantages-div-2 p {
+  position: relative;
+  left: 90px;
+  top: -55px;
+}
+.advantages-div-3 p {
+  position: relative;
+  left: 50px;
+  top: -70px;
+}
+.advantages-div-4 p {
+  position: relative;
+  left: 50px;
+  top: -70px;
+}
+.advantages-div-5 p {
+  position: relative;
+  left: 50px;
+  top: -90px;
+}
+.advantages-div-6 p {
+  position: relative;
+  left: 50px;
+  top: -80px;
+}
+.advantages-div-1 span {
+  font-size: 18px;
+}
+.advantages-div-2 span {
+  font-size: 18px;
+}
+.advantages-div-5 span {
+  font-weight: 600;
+  font-size: 20px;
+}
+.services-div {
+  max-width: 1200px;
+  padding-left: 250px;
+}
+.services-div h4 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.services-div li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  list-style-type: none;
+  max-width: 650px;
+}
+.services-div li span{
+  padding-right: 15px;
+  color: #c3c3c3;
+}
+.services-div li:hover {
+background-color: #cfdce1;
+}
+.services-div li:hover > span {
+  color: #ffffff;
+}
+.services-div svg {
+  position: relative;
+  left: 20px;
+  width: 25px;
+}
+.services-div li:nth-child(1) svg {
+  left: 25px;
+}
+.services-div li:nth-child(4) svg {
+  left: 230px;
+}
+.services-div li:nth-child(5) svg {
+  left: 440px;
+}
+.services-div li:nth-child(6) svg {
+  left: 360px;
+}
+.services-div polyline {
+  stroke: #ffffff;
+}
+.services-div-list {
+  border: 1px solid black;
+  max-width: 350px;
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+}
+.services-div-list p:nth-child(1) {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #0071b3;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.services-div-list p:nth-child(2) {
+  font-size: 14px;
+}
+.services-div-drop-button {
+  border: 1.5px solid #03a17c;
+  max-width: 200px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: #03a17c;
+  position: relative;
+  left: 500px;
+  top: -115px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.services-div-drop-button:hover {
+  background-color: #03a17c;
+  color: #ffffff;
+}
+
+ 
+@media all and (max-width: 1400px) {
+  .advantages-div {
+    padding-left: 150px;
+  }
+}

@@ -1,0 +1,132 @@
+{% extends "ndi_app/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+        <section class="main">
+        {% if selected_activity.slug == "ekspertiza" %}
+
+            <h2>>Експертиза об’єктів будівництва</h2>
+        <div class="div-top">
+            <div class="div-top-img">
+                <img src="{% static "image/expertise/div-top-img.png" %}" alt="Експертиза">
+                <p>Дніпровська філія інституту «НДІПРОЕКТРЕКОНСТРУКЦІЯ» має розгалужену мережу замовників експертизи, як державного так і приватного сектору, тісно взаємодіє з органами державної влади та місцевого самоврядування по всій Україні.</p>
+            </div>
+            <div class="div-top-doc">
+                <h4>Документи:</h4>
+                 {% for file in files_of_expertise %}
+
+                     <a class="div-top-doc-questionnaire" href="{{ file.file.url }}">{{ file.name }}</a>
+                    <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 14"><!--<defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs>--><title>NDI main</title><polyline class="cls-1" points="28.88 2.28 14.94 11.76 0.99 2.28"/></svg>
+
+                 {% endfor %}
+            </div>
+        </div>
+        <div class="advantages">
+            <h3>Наші переваги</h3>
+            <div class="advantages-div">
+                <div class="advantages-div-div">
+                    <div class="advantages-div-1">
+                        <img src="{% static "image/expertise/advantages-img1.png" %}" alt="">
+                        <p><span>Державна</span></br>експертиза</br>будівництва</p>
+                    </div>
+                    <div class="advantages-div-2">
+                        <img src=".{% static "image/expertise/advantages-img2.png" %}" alt="">
+                        <p>Працюємо</br>по всій</br><span>Україні</span></p>
+                    </div>
+                    <div class="ad{% static "image/expertise/advantages-img3.png" %}" alt="">
+                        <p>Розташовані</br>в центрі міста</br>і в центрі країни</p>
+                    </div>
+                    <div class="advantages-div-4">
+                        <img src="{% static "image/expertise/advantages-img4.png" %}" alt="">
+                        <p>Сертифіковані</br>експерти</br>по всім напрямам*</p>
+                    </div>
+                    <div class="advantages-div-5">
+                        <img src="{% static "image/expertise/advantages-img5.png" %}" alt="">
+                        <p><span>>2000</span></br>успішних</br>експертиз</br>в рік</p>
+                    </div>
+                    <div class="advantages-div-6">
+                        <img src="{% static "image/expertise/advantages-img6.png" %}" alt="">
+                        <p>Здійснюємо</br>експертизу об’єктів</br>усіх класів наслідків</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-div">
+            <h4>Послуги експертизи об’єктів будівництва:</h4>
+            <div class="services-div-drop">
+                <ul>
+
+                    {% for service in service_of_expertise %}
+
+                        <li><span>{{ service.id }}.</span>{{ service.name }}<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 14"><!--<defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs>--><title>NDI main</title><polyline class="cls-1" points="28.88 2.28 14.94 11.76 0.99 2.28"/></svg></li>
+
+                    {% endfor %}
+
+                </ul>
+                <div class="services-div-list">
+                    <p>Реєстр атестованих експертів</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero distinctio tempore et fugit architecto accusantium tempora est dolores autem impedit? Ipsam, non beatae! Hic sit saepe nemo ea rem cupiditate.</p>
+                </div>
+                <div class="services-div-drop-button">Замовити експертизу</div>
+            </div>
+        </div>
+
+
+        {% elif selected_activity.slug == "rozrobka-mistobudivnoyi-planuvalnoyi-dokumentaciyi" %}
+
+            <section class="main">
+        <h2>>{{ selected_activity.name }}</h2>
+        <div class="main-div">
+            <img src="{% static "image/1.png" %}" alt="Містободування">
+            <p>У 2018 р. Дніпровською  філією ДП “НД ПВІ “НДІпроектреконструкція”, створено структурний підрозділ на рівні відділу - “Центр містобудування”. Мета створення такого структурного підрозділу –
+            організація проектних робіт по розробленню містобудівної документації всіх рівнів у тому числі :</p>
+            <ul>
+                <li>> схем планування територій адміністративних районів та їх частин; </li>
+                <li>> Генеральних планів населених пунктів;</li>
+                <li>> детальних планів територій;</li>
+                <li>> планів зонування територій.</li>
+            </ul>
+            <p>З прийняттям Закону Україні № 6403, прийняття якого очікується у 2018 році, підприємство планує приступити до розроблення планів об’єднаної територіальної громади, ринок яких достатньо великий і потребує залучення додаткових сил на організацію проведення проектних робіт.</p>
+            <p>Наразі відділ укомплектований трьома архітекторами, придбано сучасну комп’ютерну техніку на 3 робочих місця, розіслано листи на керівників орёганів місцевого самоврядування Дніпропетровської області із запрошенням до співпраці.</p>
+            <p>Закріпленим за цим напрямком Заступником директора – Соколовим І.А., організовані виїзди в регіони для зустрічі з представниками органів влади, проведені роз’яснювальні бесіди щодо необхідності розроблення містобудівної документації, надані цінові пропозиції для визначення витрат на розроблення проектів з планування територій для формування місцевих бюджетів.</p>
+            <p>Підприємством заключено договори на розроблення генеральних планів населених пунктів Старі Кодаки, Дніпрове, Дороге з Новоолександрівською сільською радою Дніпровського району Дніпропетровської області. Окрім того в стадії очікування фінансування проектних робіт знаходиться проект розроблення генерального плану на населеній пункт Партизанське, та розроблення проекту зонування території (зонінг) населеного пункту Єлизаветівка П’ ятихатського району Дніпропетровської області.</p>
+            <p>Загалом підприємство накопичує досвід для подальшої участі у тендерних процедурах через  систему “Прозоро” та розширення можливостей своєї участі  на конкурентних засадах в інших тендерах. </p>
+            <p>Протягом 2018 р. підприємством виконано ряд експертиз містобудівної документації: Генеральний план м.Приморськ, генеральний план м.Покров, генеральний план м. Прилуки, генеральний план м. Ніжин, генеральний план смт. Василівка, схема планування Василівського району Запорізьської області т.і.</p>
+            <p>З метою раціонального використання існуючого кадрового складу інституту, планується включити в процес розроблення містобудівної документації  фахівців з виконання топогеодезичних робіт та інших фахівців за потребою. </p>
+            <p>У 2018 р. підприємством вже виконано проектних робіт на об’єкти оборони по замовленню Міністерства оборони України – 30 проектів казарм поліпшеного планування та майже 15 об’єктів інженерного забезпечення територій  у 6 військових містечках 3-х областей України де також були виконані роботі з планування територій.</p>
+        </div>
+    </section>
+
+        {% else %}
+
+
+            <h2>{{ selected_activity.name }}</h2>
+                <div class="infinite-container">
+                    {% for act in activity_works %}
+
+                    <div class="infinite-item">
+                        <h3>{{ act.title }}</h3>
+                        <img alt="{{ act.title }}" src="{{ act.image.url }}">
+                        <p>{{ act.description }}</p>
+
+                    </div>
+                {% endfor %}
+
+
+                </div>
+
+
+        {% endif %}
+        </section>
+    <aside>
+        <h2>Інші напрями діяльності</h2>
+        <div class="aside-div" id="aside">
+            {% for activity in activities %}
+
+                <a href="{% url "ndi_app:ActivityPageList" activity_slug=activity.slug %}">{{ activity.name }}</a>
+
+            {% endfor %}
+        </div>
+    </aside>
+
+{% endblock %}

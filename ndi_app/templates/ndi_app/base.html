@@ -1,0 +1,94 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>НДI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/news_styles.css" %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/general.css" %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/reset.css" %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/rest_styles.css" %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/town planning.css" %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/expertise.css" %}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img src="{% static "logo/NDI logo-16.png" %}" alt='НДІПРОЕКТРЕКОНСТРУКЦІЯ' class="header-img-logo">
+        <ul class="header-menu">
+            <li><a  href="{% url "ndi_app:MainPage" %}">Головна</a></li>
+            <li><a  href="#">Про нас</a></li>
+            <li class="header-menu-activity"><a  href="{% url "ndi_app:ActivityPage" %}">Діяльність</a>
+                <svg id="Слой_1" class="header-menu-svg-arrow" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 14"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>NDI main</title><polyline class="cls-1" points="28.88 2.28 14.94 11.76 0.99 2.28"/></svg>
+            <ul class="header-menu-menu" id="arr">
+                {% for act in all_activities %}
+                     <li><a href="{% url "ndi_app:ActivityPageList" activity_slug=act.slug %}">{{ act.name }}</a></li>
+                {% endfor %}
+            </ul>
+            </li>
+            <li><a href="{% url "ndi_app:NewsPage" %}">Новини</a></li>
+            <li><a href="{% url "ndi_app:ContactsPage" %}">Контакти</a></li>
+            <li><form class="header-search">
+                    <div class="header-search-group">
+                        <input class="header-input" type="text" required>
+                        <span class="header-bar"></span>
+                        <label class="header-label"><svg  title="Пошук" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.81 34.06"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-2{stroke-width:3px;}</style></defs><title>Пошук</title><circle class="cls-1" cx="13.42" cy="13.42" r="12.42"/><line class="cls-2" x1="22.84" y1="22.08" x2="33.75" y2="33"/></svg></label>
+                    </div>
+                </form>
+            </li>
+        </ul>
+        <div id="darkness" class="backdrop"></div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer-div">
+            <div class="footer-links">
+                <h4>Посилання</h4>
+                <a href="#">Головний інститут</a>
+                <a href="#">Мінрегіон</a>
+                <a href="#">Урядовий портал</a>
+                <a href="#">CRUSP</a>
+            </div>
+            <div class="address">
+                <h4>Адреса</h4>
+                <p>м. Дніпро</p>
+                <p>вул. В'ячеслава Липинського 7</p>
+            </div>
+            <div class="address-reception">
+                <h4>Приймальня</h4>
+                <p>тел.: +38 0562 383160</p>
+                <p>факс.: +38 056 7442046</p>
+                <p>nii.proekt@gmail.com</p>
+            </div>
+            <div class="address-exp">
+                <h4>Експертиза</h4>
+                <p>тел.: +38 0562 383160</p>
+                <p class="address-email">nii.expert.dp@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-1.9.1.min.js"
+        integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $('#arr').hover(function(){
+            $('#darkness').fadeTo(300, 1);
+        }, function(){
+            $('#darkness').fadeTo(300, 0, function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+}
+.main {
+    margin: 10px 0 50px 0;
+  }
+/* верхний слайдер */
+
+.sl_ctr{
+    position:relative;
+    width: 100%;
+    height:550px;
+    overflow:hidden;
+
+}
+.sldr{
+    position:relative;
+    width:10000px;
+    height:300px;
+}
+.sldr img{
+    float:left;
+    width: 1519px;
+}
+.prv_b, .nxt_b{
+    position:absolute;
+    top:135px;
+    display:block;
+    width:60px;
+    height:60px;
+    cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+    right:200px;
+    top: 450px;
+}
+.nxt_b{
+    right:100px;
+    top: 450px;
+}
+.main-div {
+    z-index: 3;
+    position: absolute;
+    top: 360px;
+    left: 100px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.1px;
+}
+.main-div h1 {
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.main-div p {
+    font-size: 24px;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+.main-div button {
+    outline: none;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 60px 10px 60px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.main-div button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    cursor: pointer;
+}
+.main-div-mask {
+    background-color: #000000;
+    opacity: 0.5;
+    width: 830px;
+    height: 287px;
+    z-index: 2;
+    position: absolute;
+    top: 320px;
+    left: 30px;
+}
+.branch {
+    padding: 50px 0 50px 90px;
+    margin-top: 50px;
+    margin-left: 110px;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+}
+.branch-description {
+    width: 25%;
+    padding-top: 20px;
+}
+.branch-description h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.branch-description p {
+    font-size: 14px;
+    padding-top: 10px;
+    line-height: 1.3;
+}
+.branch-diagram {
+    background-color: #d1dee3;
+    width: 720px;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.branch-diagram div{
+    padding: 50px 100px 0 80px;
+}
+.diagram-time img {
+    width: 80px;
+}
+.diagram-time p {
+    position: relative;
+    top: -40px;
+    left: 50px;
+    font-size: 28px;
+    font-weight: 900;
+}
+.diagram-time span {
+    font-size: 38px;
+}
+.diagram-team img {
+    width: 70px;
+}
+.diagram-team p {
+    position: relative;
+    top: -45px;
+    left: 50px;
+    font-size: 28px;
+    font-weight: 900;
+}
+.diagram-team span {
+    font-size: 38px;
+}
+.diagram-project img {
+    width: 80px;
+    padding-left: 5px;
+}
+.diagram-project p {
+    position: relative;
+    top: -60px;
+    left: 45px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.diagram-project span {
+    font-size: 38px;
+}
+.diagram-reports img {
+    width: 70px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.diagram-reports p {
+    position: relative;
+    top: -55px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.diagram-reports span {
+    font-size: 38px;
+}
+.activity {
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.activity h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 250px;
+}
+.activity-block {
+    padding-left: 260px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url(../../images/main_page/NDI\ main\ page\ HOUSe\ line.svg);
+    background-size: 1050px;
+    background-repeat: no-repeat;
+    background-position-x: 250px;
+    background-position-y: 155px;
+}
+.activity-block a {
+    text-decoration: none;
+    color: #000000;
+    height: 100px;
+    width: 200px;
+    margin: 25px 75px 25px 0;
+    border: 2px solid #FFFFFF;
+}
+.activity-block p {
+    position: relative;
+    top: -110px;
+    left: 0;
+    font-size: 14px;
+}
+.activity-block svg {
+    position: relative;
+    right: 20px;
+}
+.svg1 path {
+    fill: #ebebeb;
+    stroke: #ebebeb;
+}
+.svg1 polyline {
+    stroke: #ffffff;
+}
+.svgColourFill:hover polyline {
+    stroke: #faea59;
+}
+.svgColourFill:hover path {
+    fill: #faea59;
+    stroke: #faea59;
+}
+
+.news {
+    padding-top: 100px;
+}
+.news-h3 {
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 350px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-news {
+    max-width: 70%;
+    margin: 20px 0 0 230px;
+}
+.main-news-div {
+    padding: 15px 20px 15px 20px;
+    max-height: 130px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-news-div:hover {
+    background-color: #f2f2f2;
+}
+.main-news-div img {
+    max-width: 100px;
+}
+.new-div-description {
+    padding-left: 30px;
+}
+.new-div-description h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+.new-div-description p {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.new-div-description span {
+    font-size: 12px;
+    position: relative;
+    top: 60px;
+}
+
+.bottom-slider h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+    }
+.append-buttons a {
+    display: inline-block;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+}
+.swiper-button-prev  {
+    background-image: url(../../images/main_page/NDI\ main\ page\ portfolio\ left1.svg);
+}
+.swiper-button-next {
+    background-image: url(../../images/main_page/NDI\ main\ page\ portfolio\ right1.svg);
+}
+
+.swiper-wrapper div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px !important;
+}
+/*.swiper-wrapper div:nth-child(1) {*/
+    /*background-image: url(../../images/main_page/organ.jpg);*/
+
+/*}*/
+/*.swiper-wrapper div:nth-child(2) {*/
+    /*background-image: url(../../images/philharmonic-dnepropetrovsk.jpg);*/
+/*}*/
+/*.swiper-wrapper div:nth-child(3) {*/
+    /*background-image: url(../../images/поштамт-2.jpg);*/
+/*}*/
+/*.swiper-wrapper div:nth-child(4) {*/
+    /*background-image: url(../../images/607868.jpg);*/
+/*}*/
+    
+
+
+
+
+@media all and (max-width: 1px) {
+    .new-div-description span {
+        top: 50px;
+    }
+}

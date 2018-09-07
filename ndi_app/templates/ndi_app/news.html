@@ -1,0 +1,24 @@
+{% extends "ndi_app/base.html" %}
+
+{% block content %}
+
+    <section class="main">
+        <h2>Новини</h2>
+        <div class="main-news">
+
+            {% for news in all_news %}
+                <div class="main-news-div">
+                    <img src="{{ news.image.url}}" alt="{{ news.title}}">
+                    <div class="new-div-description">
+                        <h3>{{ news.title }}</h3>
+                        <p>{{ news.text }}</p>
+                        <span>{{ news.created|date:'Y.m.d H:i' }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+
+{% endblock %}
