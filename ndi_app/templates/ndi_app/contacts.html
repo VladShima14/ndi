@@ -25,10 +25,10 @@
                     <form action="{% url "ndi_app:ContactSend" %}" class="main-form" method="post">
                         {% csrf_token %}
                         {{ form.non_field_errors }}
-                        <input id="id_name" name="name" type="text" placeholder="Ваше ім'я">
-                        <input id="id_email" type="text" name="email" placeholder="Ваша почта">
-                        <input id="id_theme" type="text" name="theme" placeholder="Тема">
-                        <input id="id_phone" type="tel" name="phone" placeholder="Ваш телефон">
+                        <input id="id_name" name="name" type="text" placeholder="Ваше ім'я" class=".main-form-input">
+                        <input id="id_email" type="text" name="email" placeholder="Ваша почта" class=".main-form-input">
+                        <input id="id_theme" type="text" name="theme" placeholder="Тема" class=".main-form-input">
+                        <input id="id_phone" type="tel" name="phone" placeholder="Ваш телефон" class=".main-form-input">
                         <textarea id="id_message" name="message" placeholder="Повідомлення"></textarea>
                         <input type="submit" value="Надіслати" class="main-form-btn">
                     </form>

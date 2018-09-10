@@ -231,7 +231,7 @@ input:focus ~ .header-bar:after {
   padding-top: 10px; 
 }
 
-.main-form input {
+.main-form-input {
   max-width: 45%;
   height: 30px;
   background-color: #e6e6e6;
