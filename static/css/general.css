@@ -342,6 +342,10 @@ footer h4 {
   .main {
     margin-top: 50px;
   }
+  .main-h2 {
+    padding-top: 50px; 
+    text-align: center;
+  }
   .header-menu li:nth-child(3)  {
     display: none;
     visibility: hidden;

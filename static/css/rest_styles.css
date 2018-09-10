@@ -177,12 +177,6 @@ input:focus ~ .header-bar:after {
 .main {
   margin: 50px 0 50px 0;
 }
-.main h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  padding-left: 90px;
-}
 .infinite-container {
   margin: 50px auto 50px;
   max-width: 600px;
@@ -242,108 +236,8 @@ aside h2 {
 .aside-div a:hover {
   background-color: #FFFFFF;
 }
-footer {
-  background-color: #666666;
-  color: #e6e6e6;
-  position: relative;
-  left: 0;
-   bottom: 0;
-   width: 100%;
-  max-width: 100%;
-  height: 180px;
-  padding-top: 50px;
-}
-footer p {
-  padding-top: 20px;
-  font-size: 12px;
-}
-footer h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #FFFFFF;
-  font-weight: 500;
-}
-.footer-div {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding-left: 90px;
-  padding-top: 20px;
-}
-.footer-links {
-  display: flex;
-  flex-flow: column wrap;
-}
-.footer-links a {
-  padding-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  color: #e6e6e6;
-}
-.footer-links a:hover {
-  color: #FFFFFF;
-}
-.footer-links a:nth-child(5) {
-  color: #aaaaaa;
-  padding-top: 30px;
-}
-.address {
-  padding-left: 300px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-}
-.address-exp {
-  padding-right: 100px;
-}
-.address-email {
-  margin-top: 35px;
-}
 /* адаптивность */
 
- 
-@media all and (max-width: 1270px) {
-  header {
-    height: 100px; 
-  }
-  .header {
-    flex-flow: column wrap;
-    margin: 25px auto;
-  }
-  .header-menu-svg-arrow {
-    display: none;
-  }
-}  
-@media all and (max-width: 1102px) {
-  .address {
-    padding-left: 10px;
-  }
-
-}
-@media all and (max-width: 1000px) {
-  .header-menu > li {
-    max-width: 100%;
-    width: 65px;
-  }
-  .header-menu a:hover {
-    border-bottom: none;
-  }
-
-}
-@media all and (max-width: 950px) {
-
-  .header-menu {
-    flex-flow: row wrap;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-  }
-  .header-menu > li {
-    padding: 5px;
-  }
-  .address {
-    padding-left: 0;
-  }
-}
 @media all and (max-width: 835px) {
   .main {
     margin-top: 110px;
@@ -354,25 +248,10 @@ footer h4 {
   .aside-div a {
     padding: 10px 0 10px 10%;
   }
-  footer {
-    height: 200px;
-    padding-top: 50px;
-  }
-  .footer-div {
-    flex-flow: row wrap;
-    padding-left: 10%;
-  }
-  .address-exp {
-    padding-right: 10px;
-  }
 }
 @media all and (max-width: 780px) {
   .main {
     margin-top: 50px;
-  }
-  .header-menu li:nth-child(3)  {
-    display: none;
-    visibility: hidden;
   }
 }
 @media all and (max-width: 750px) { 
@@ -388,31 +267,10 @@ footer h4 {
   .aside-div a {
     padding: 10px 0 10px 0;
   }
-  footer {
-    padding-top: 50px;
-  }
-  .footer-div {
-    padding-left: 0;
-  }
-  .address-exp {
-    padding-right: 5px;
-  }
-}
-@media all and (max-width: 700px) { 
-  ul li:hover .header-menu-menu {
-    display: none; 
-  }
-  .header-menu li:nth-child(3)  {
-    display: none;
-    visibility: hidden;
-  }
 }
 @media all and (max-width: 665px) {
   .main {
     margin-top: 110px;
-  }
-  .main h2 {
-    padding-left: 15px;
   }
 }
 @media all and (max-width: 600px) {
@@ -423,42 +281,9 @@ footer h4 {
     max-width: 400px;
   }
 }
-@media all and (max-width: 560px) {
-
-  footer {
-    height: 650px;
-  }
-  .footer-div {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    max-width: 40%;
-    text-align: center;
-    padding-top: 0;
-  }
-  .footer-div div {
-    padding-top: 50px;
-  }
-  .address-email {
-    margin-top: 0;
-  }
-}
 @media all and (max-width: 410px) {
-  .header-img-logo { 
-    width: 250px;
-  }
-  .header-menu > li {
-    display: flex;
-    flex-flow: column wrap;
-    margin-right: 55px;
-  }
   .main {
     margin-top: 160px;
-  }
-  .main h2 {
-    text-align: center;
-    padding-top: 25px;
   }
   .infinite-item img {
     max-width: 300px;

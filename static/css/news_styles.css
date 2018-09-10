@@ -1,15 +1,9 @@
 .main {
     margin: 50px 0 50px 0;
 }
-.main h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    padding-left: 90px;
-}
 .main-news {
     max-width: 70%;
-    margin: 20px 0 0 130px;
+    margin: 20px 0 250px 130px; /*временный костыль, пока нет контента*/
 }
 .main-news-div {
     padding: 15px 20px 15px 20px;
@@ -41,7 +35,6 @@
     position: relative;
     top: 60px;
 }
-
 @media all and (max-width: 1007px) {
     .new-div-description span {
         top: 50px;
