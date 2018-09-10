@@ -141,10 +141,6 @@
     margin-top: 30px;
     width: 300px
   }
-  .main-form-btn:hover {
-    -webkit-animation: none;  
-      animation: none; 
-  }
 }
 @media all and (max-width: 950px) {
   .main {
@@ -189,5 +185,19 @@
     margin: 0 auto;
     max-width: 300px;
     padding-left: 10px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .main-form-input {
+    max-width: 100%;
+    width: 200px;
+  }
+  .main-form textarea {
+    width: 200px;
+    padding: 0 0 0 5px;
+  }
+  .main-form-btn {
+    width: 200px;
   }
 }
