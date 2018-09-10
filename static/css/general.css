@@ -339,12 +339,9 @@ footer h4 {
   }
 }
 @media all and (max-width: 780px) {
-  .main {
-    margin-top: 50px;
-  }
   .main-h2 {
-    padding-top: 50px; 
     text-align: center;
+    padding-left: 0;
   }
   .header-menu li:nth-child(3)  {
     display: none;
@@ -352,9 +349,6 @@ footer h4 {
   }
 }
 @media all and (max-width: 750px) { 
-  .main {
-    margin-top: 100px;
-  }
   aside {
     text-align: center;
   }
