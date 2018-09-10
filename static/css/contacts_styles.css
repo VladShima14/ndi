@@ -258,32 +258,6 @@ input:focus ~ .header-bar:after {
 .main-form-btn:hover {
   color: #f7f7f7;
   background-color: #03a87c; 
-  -webkit-animation: 0.9s tremor ease-out infinite;  
-    animation: 0.9s tremor ease-out infinite; 
-}
-@-webkit-keyframes tremor {
-  0%, 25% {
-      top:-1px;
-      -webkit-transform: translatey(-4%);
-      transform: translatey(-4%);
-  }
-  50%, 100% {
-      top: 1px;
-      -webkit-transform: translatey(4%);
-      transform: translatey(4%);
-  }
-}
-@keyframes tremor {
-  0%, 25% {
-      top:-1px;
-      -webkit-transform: translatey(-4%);
-      transform: translatey(-4%);
-  }
-  50%, 100% {
-      top: 1px;
-      -webkit-transform: translatey(4%);
-      transform: translatey(4%);
-  }
 }
 footer {
   background-color: #666666;
