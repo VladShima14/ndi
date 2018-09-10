@@ -249,7 +249,7 @@ input:focus ~ .header-bar:after {
 .main-form-btn {
   padding: 5px 30px 5px 30px;
   margin-top: 30px;
-  background-color: #ce3a3a;
+  background-color: #e6e6e6;
   border: 1px solid #e6e6e6;
   cursor: pointer; 
   color: #98999a;
