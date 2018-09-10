@@ -359,7 +359,7 @@ footer h4 {
     display: flex;
     flex-flow: column wrap;
   }
-  .main-form input {
+  .main-form-input {
     max-width: none;
     width: 295px;
     height: 30px;
