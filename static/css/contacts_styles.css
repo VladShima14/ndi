@@ -252,7 +252,7 @@ input:focus ~ .header-bar:after {
   background-color: #ce3a3a;
   border: 1px solid #e6e6e6;
   cursor: pointer; 
-  color: #ffffff;
+  color: #98999a;
   text-align: center;
 }
 
