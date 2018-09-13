@@ -6,4 +6,4 @@ class ContactForm(forms.Form):
     email = forms.EmailField()
     theme = forms.CharField(max_length=250)
     phone = forms.CharField()
-    message = forms.TextInput()
+    message = forms.CharField(max_length=1000)
