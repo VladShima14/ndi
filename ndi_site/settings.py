@@ -41,7 +41,13 @@ INSTALLED_APPS = [
 
     # apps
     'ndi_app',
+
+    # download apps
+    'ckeditor',
+    'ckeditor_uploader',
 ]
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -81,6 +81,9 @@
         integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
         crossorigin="anonymous">
     </script>
+    {% block extrahead %}
+    <script>window.CKEDITOR_BASEPATH = '/static/ckeditor/ckeditor/';</script>
+    {% endblock %}
     <script>
         $('#arr').hover(function(){
             $('#darkness').fadeTo(300, 1);

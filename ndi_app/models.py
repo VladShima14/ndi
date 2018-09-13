@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -82,7 +83,8 @@ class Activity(models.Model):
 class WorksInActivity(models.Model):
     activity = models.ForeignKey('Activity', related_name="activity", verbose_name="Деятельность")
     title = models.CharField(max_length=250, db_index=True, verbose_name="Название", blank=True, null=True)
-    description = models.TextField(verbose_name="Описание")
+    # description = models.TextField(verbose_name="Описание")
+    description = RichTextField(verbose_name="Описание")
     image = models.ImageField(upload_to='images/activity/', verbose_name='фото')
 
     def __str__(self):
