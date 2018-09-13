@@ -177,7 +177,7 @@ input:focus ~ .header-bar:after {
 .main {
   margin: 0 0 50px 0;
 }
-.main h2 {
+.main-h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -339,8 +339,9 @@ footer h4 {
   }
 }
 @media all and (max-width: 780px) {
-  .main {
-    margin-top: 50px;
+  .main-h2 {
+    text-align: center;
+    padding-left: 0;
   }
   .header-menu li:nth-child(3)  {
     display: none;
@@ -348,9 +349,6 @@ footer h4 {
   }
 }
 @media all and (max-width: 750px) { 
-  .main {
-    margin-top: 100px;
-  }
   aside {
     text-align: center;
   }

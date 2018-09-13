@@ -3,7 +3,7 @@
 {% block content %}
 
     <section class="main">
-            <h2>Контакти:</h2>
+            <h2 class="main-h2">Контакти:</h2>
             <div class="main-block">
                 <div class="main-block-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.550056959934!2d35.04942731566038!3d48.46516197925077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2dd32b07ecf%3A0x49934439eded0486!2z0YPQu9C40YbQsCDQktGP0YfQtdGB0LvQsNCy0LAg0JvQuNC_0LjQvdGB0LrQvtCz0L4sIDcsINCU0L3QuNC_0YDQviwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1532793098165" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -25,13 +25,14 @@
                     <form action="{% url "ndi_app:ContactSend" %}" class="main-form" method="post">
                         {% csrf_token %}
                         {{ form.non_field_errors }}
-                        <input id="id_name" name="name" type="text" placeholder="Ваше ім'я">
-                        <input id="id_email" type="text" name="email" placeholder="Ваша почта">
-                        <input id="id_theme" type="text" name="theme" placeholder="Тема">
-                        <input id="id_phone" type="tel" name="phone" placeholder="Ваш телефон">
+                        <input id="id_name" name="name" type="text" placeholder="Ваше ім'я" class="main-form-input">
+                        <input id="id_email" type="text" name="email" placeholder="Ваша почта" class="main-form-input">
+                        <input id="id_theme" type="text" name="theme" placeholder="Тема" class="main-form-input">
+                        <input id="id_phone" type="tel" name="phone" placeholder="Ваш телефон" class="main-form-input">
                         <textarea id="id_message" name="message" placeholder="Повідомлення"></textarea>
-{#                        <button type="submit" form="" class="main-form-btn">Надіслати</button>#}
-                        <input type="submit" class="main-form-btn" value="Надіслати">
+
+                        <input type="submit" value="Надіслати" class="main-form-btn">
+
                     </form>
                 </div>
             </div>
